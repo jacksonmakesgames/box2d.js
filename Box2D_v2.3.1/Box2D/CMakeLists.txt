@@ -149,7 +149,7 @@ if(BOX2D_BUILD_SHARED)
 endif()
 
 if(BOX2D_BUILD_STATIC)
-	add_library(Box2D STATIC
+	add_library(Box2D OBJECT
 		${BOX2D_General_HDRS}
 		${BOX2D_Joints_SRCS}
 		${BOX2D_Joints_HDRS}
