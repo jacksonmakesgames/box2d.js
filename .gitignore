@@ -5,3 +5,4 @@ box2d_glue.js
 WebIDLGrammar.pkl
 parser.out
 *.o
+.vs/
