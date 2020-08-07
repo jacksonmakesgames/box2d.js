@@ -124,7 +124,7 @@ public:
 	/// @return the true if the shape is a sensor.
 	bool IsSensor() const;
 
-	/// Set the contact filtering data. This will not update contacts until the next time
+	/// Set the contact filtering data. This will not resetScroll contacts until the next time
 	/// step when either parent body is active and awake.
 	/// This automatically calls Refilter.
 	void SetFilterData(const b2Filter& filter);
@@ -167,7 +167,7 @@ public:
 	void GetMassData(b2MassData* massData) const;
 
 	/// Set the density of this fixture. This will _not_ automatically adjust the mass
-	/// of the body. You must call b2Body::ResetMassData to update the body's mass.
+	/// of the body. You must call b2Body::ResetMassData to resetScroll the body's mass.
 	void SetDensity(float32 density);
 
 	/// Get the density of this fixture.

@@ -73,7 +73,7 @@ public:
 	/// Implements b2Joint.
 	float32 GetReactionTorque(float32 inv_dt) const;
 
-	/// Use this to update the target point.
+	/// Use this to resetScroll the target point.
 	void SetTarget(const b2Vec2& target);
 	const b2Vec2& GetTarget() const;
 

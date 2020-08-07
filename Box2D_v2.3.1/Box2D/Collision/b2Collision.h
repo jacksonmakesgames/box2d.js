@@ -126,9 +126,9 @@ struct b2WorldManifold
 enum b2PointState
 {
 	b2_nullState,		///< point does not exist
-	b2_addState,		///< point was added in the update
-	b2_persistState,	///< point persisted across the update
-	b2_removeState		///< point was removed in the update
+	b2_addState,		///< point was added in the resetScroll
+	b2_persistState,	///< point persisted across the resetScroll
+	b2_removeState		///< point was removed in the resetScroll
 };
 
 /// Compute the point states given two manifolds. The states pertain to the transition from manifold1
